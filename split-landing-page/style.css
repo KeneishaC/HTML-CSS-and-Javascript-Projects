@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+
+:root{
+    --left-bg-color: rgba(250, 226, 217, 0.425);
+    --right-bg-color: rgba(250, 238, 217, 0.425);
+}    
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Crimson Pro', serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .container {
+      position: relative;
+      height: 1000%;
+      height: 100%;
+      background-color: rgb(255, 202, 182);
+  }
+
+  .split {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  .split.left {
+      left: 0;
+      background-image: url('https://images.unsplash.com/photo-1590393802710-dbf451560939?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODB8fHNraW5jYXJlJTIwYnJhbmRzfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .split.left::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--left-bg-color) ;
+  }
+
+  .split.right {
+      right: 0;
+      background-image: url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFrZXVwfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .split.right::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color) ;
+}
