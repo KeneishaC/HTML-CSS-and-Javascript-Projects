@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: blanchedalmond;
+  background-color: floralwhite;
 }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
 }
 
 .faq.active {
-    background-color: cornsilk;
+   background-color: antiquewhite;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -69,4 +69,40 @@ h1 {
     display: block;
 }
 
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
 
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: whitesmoke;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: wheat;
+}
