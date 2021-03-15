@@ -65,3 +65,11 @@ body::before {
     transform: translateY(-50%);
     z-index: 100;
 }
+
+.left-arrow {
+    left: calc(15vw - 65px);
+}
+
+.right-arrow {
+    right: calc(15vw - 65px);
+}
