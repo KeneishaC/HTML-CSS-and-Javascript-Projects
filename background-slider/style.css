@@ -58,12 +58,17 @@ body::before {
 .arrow {
     position: fixed;
     background-color: transparent;
+    color: white;
     padding: 20px;
     font-size: 30px;
     border: 2px solid olive;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    cursor: pointer;
+}
+
+.arrow:focus {
+    outline: 0;
 }
 
 .left-arrow {
