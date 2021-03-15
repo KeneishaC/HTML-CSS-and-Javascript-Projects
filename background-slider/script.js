@@ -7,7 +7,7 @@ const rightBtn = document.getElementById('right')
 
 
 let activeSlide = 0
-
+//right button navigation
 rightBtn.addEventListener('click', () => {
     activeSlide++
 
@@ -18,7 +18,7 @@ rightBtn.addEventListener('click', () => {
     setBgToBody()
     setActiveSlide()
 })
-
+//left button navigation
 leftBtn.addEventListener('click', () => {
     activeSlide--
 
