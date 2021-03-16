@@ -34,6 +34,8 @@ function setTime() {
     const hoursForClock = hours % 12
     const minutes = time.getMinutes()
     const seconds = time.getSeconds()
+    const ampm = hours >= 12 ? 'PM' : 'AM'
+
     //set needles to make a clock according to current time
     //creates 12 hour format for clock. 360 is set because the clock is round
     hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`
@@ -43,7 +45,8 @@ function setTime() {
 
 
     //set  time in html
-    timeEl.innerHTML = `${hoursForClock}: `
+    timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
+    //sets date in html 
 
 
 }
