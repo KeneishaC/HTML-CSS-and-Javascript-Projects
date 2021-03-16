@@ -30,10 +30,12 @@ function setTime() {
     //JS 
     const month = time.getMonth()
     const day = time.getDay()
+    const date = time.getDate()
     const hours = time.getHours()
     const hoursForClock = hours % 12
     const minutes = time.getMinutes()
     const seconds = time.getSeconds()
+    //checks to see if it is am or pm using 12 hour time
     const ampm = hours >= 12 ? 'PM' : 'AM'
 
     //set needles to make a clock according to current time
@@ -47,6 +49,7 @@ function setTime() {
     //set  time in html
     timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
     //sets date in html 
+    dateEl = `${days[day]}, ${months[month]} <span class="circle>{date}</span>"`
 
 
 }
