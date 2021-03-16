@@ -5,7 +5,7 @@ const minuteEl = document.querySelector('.minute')
 const secondEl = document.querySelector('.second')
 const timeEl = document.querySelector('.time')
 const dateEl = document.querySelector('.date')
-const toggleEl = document.querySelector('.toggle')
+const toggle= document.querySelector('.toggle')
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -13,14 +13,14 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 
 //toggles back and forth from light and dark mode
 
-toggleEl.addEventListener('click', (e) => {
+toggle.addEventListener('click', (e) => {
     const html = document.querySelector('html')
-    if( html.classList.contains('dark')) {
+    if (html.classList.contains('dark')) {
         html.classList.remove('dark')
-        e.target.innerHtml = 'Dark mode'
+        e.target.innerHTML = 'Dark mode'
     } else {
         html.classList.add('dark')
-        e.target.innerHtml = 'Light mode'
+        e.target.innerHTML = 'Light mode'
     }
 })
 
@@ -49,7 +49,7 @@ function setTime() {
     //set  time in html
     timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
     //sets date in html 
-    dateEl = `${days[day]}, ${months[month]} <span class="circle>{date}</span>"`
+    dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>"`
 
 
 }
