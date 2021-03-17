@@ -33,7 +33,7 @@
       outline: none;
   }
 
-  button.circle{
+  button .circle{
       position: absolute;
       background-color: lightgoldenrodyellow;
       width: 100px;
