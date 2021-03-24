@@ -31,10 +31,12 @@ function dragOver(e) {
 function dragEnter(e) {
     //allows image to drop into new box that the user has chose
     e.preventDefault()
+    this.className += ' hovered'
 }
 
 function dragLeave(e) {
     console.log('drag leave')
+    this.className += 'empty'
 }
 
 function dragDrop() {
