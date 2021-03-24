@@ -14,25 +14,31 @@ for(const empty of empties) {
 }
 
 function dragStart() {
-    
+    //when image is moved the box the user is moving it from will not hold the image
+    this.className += ' hold'
+    setTimeout(() => this.className = 'invisible', 0)
 }
 
 function dragEnd() {
-    console.log('drag end')
+    this.className = 'fill'
 }
 
-function dragOver() {
-    console.log('drag over')
+function dragOver(e) {
+    //allows image to drop into new box that the user has chosen
+   e.preventDefault()
 }
 
-function dragEnter() {
-    console.log('drag enter')
+function dragEnter(e) {
+    //allows image to drop into new box that the user has chose
+    e.preventDefault()
 }
 
-function dragLeave() {
+function dragLeave(e) {
     console.log('drag leave')
 }
 
 function dragDrop() {
-    console.log('drag drop')
+    //adds div class that hold image to the new box the image is dragged into
+    this.className ='empty'
+    this.append(fill)
 }
