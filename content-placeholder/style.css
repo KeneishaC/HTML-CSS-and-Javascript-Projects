@@ -17,61 +17,61 @@ body {
 
 img {
     max-width: 100%;
-}
-
-.card {
+  }
+  
+  .card {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
     width: 350px;
-}
-
-.card-header {
+  }
+  
+  .card-header {
     height: 200px;
-}
-
-.card-header img {
+  }
+  
+  .card-header img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-}
-
-.card-content {
+  }
+  
+  .card-content {
     background-color: ghostwhite;
     padding: 30px;
-}
-
-.card-title {
+  }
+  
+  .card-title {
     height: 20px;
     margin: 0;
-}
-
-.card-excerpt {
+  }
+  
+  .card-excerpt {
     color: gray;
     margin: 10px 0 20px;
-}
-
-.author {
+  }
+  
+  .author {
     display: flex;
-}
-
-.profile-img {
+  }
+  
+  .profile-img {
     border-radius: 50%;
     overflow: hidden;
     height: 40px;
     width: 40px;
-}
-
-.author-info {
+  }
+  
+  .author-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
     width: 100px;
-}
-
-
-.author-info small {
+  }
+  
+  .author-info small {
     color: grey;
     margin-top: 5px;
-}
+  }
+  
