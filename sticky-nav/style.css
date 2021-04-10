@@ -99,7 +99,7 @@ body {
 .hero h1 {
     font-size: 46px;
     margin: -20px 0 20px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .hero p {
@@ -117,5 +117,4 @@ body {
     color: #555;
     line-height: 30px;
     letter-spacing: 1.2px;
-
 }
