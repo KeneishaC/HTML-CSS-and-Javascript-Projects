@@ -1,5 +1,5 @@
-const button = document.getElementsById('button')
-const toasts = document.getElementsById('toasts')
+const button = document.getElementById('button')
+const toasts = document.getElementById('toasts')
 
 const messages = [
     'Chiceea',
@@ -18,6 +18,8 @@ function createNotification() {
     notif.classList.add('toast')
 
     notif.innerText = getRandomMessage()
+
+    toasts.appendChild(notif)
 }
 
 function getRandomMessage() {
