@@ -9,9 +9,20 @@ async function getUser(username) {
         const { data } =  await axios(APIURL + username)
         createUserCard(data)
         
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        if (err.response.status == 404) {
+            createErrorCard('No user profile with this username')
+        }
     }
+}
+
+function createErrorCard(msg) {
+    const cardHTML = `
+        <div class="card">
+            <h1>${msg}</h1>
+        </div>
+    `
+    main.innerHTML = cardHTML
 }
 
 function createUserCard(user){
