@@ -102,3 +102,14 @@
     margin-bottom: 0.5rem;
     display: inline-block;
   }
+
+
+  @media(max-width: 500px) {
+      .card {
+          flex-direction: column;
+          align-items: center;
+      }
+      .userfrom {
+          max-width: 400px;
+      }
+  }
