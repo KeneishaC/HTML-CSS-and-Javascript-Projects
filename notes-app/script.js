@@ -37,6 +37,7 @@ function addNewNote( text = '') {
         main.innerHTML = marked(value)
     })
 
+    
 
 
 
